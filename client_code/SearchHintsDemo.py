@@ -1,3 +1,4 @@
+from ._anvil_designer import SearchHintsDemoTemplate
 from anvil import *
 import anvil.server
 import tables
