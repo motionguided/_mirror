@@ -1,0 +1,70 @@
+container:
+  type: HtmlTemplate
+  properties: {html: '@theme:standard-page.html'}
+components:
+- type: ColumnPanel
+  properties: {col_widths: '{}'}
+  name: content_panel
+  layout_properties: {slot: default}
+  components:
+  - type: Label
+    properties: {role: subheading, align: left, border: '', foreground: '', visible: true,
+      text: 'The database contains names of tools you might find in a shed.
+
+
+        Begin typing a tool name and click on a result to select it
+
+
+        Press enter to select the top result.', font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: headline_please_enter_text
+    layout_properties: {grid_position: 'LYAENF,FDHJWV'}
+  - type: form:7U6PSZGRIFVZK2OC:SearchHints
+    properties: {get_keys_function: get_search_keys}
+    name: search_hints_1
+    layout_properties: {grid_position: 'KHMDAX,FUSFLK'}
+  - type: ColumnPanel
+    properties: {role: null, border: '', foreground: '', visible: true, wrap_on: never,
+      col_spacing: medium, spacing_above: small, col_widths: '{"BFMJLB":5,"YFBPFG":20,"GKSKZJ":28,"YKMRGI":15}',
+      spacing_below: small, background: 'theme:Primary 500'}
+    name: column_panel_selected_result
+    layout_properties: {grid_position: 'MAZSPD,NMDKOK'}
+    components:
+    - type: Spacer
+      properties: {height: 32}
+      name: spacer_2
+      layout_properties: {grid_position: 'PZEJWT,BFMJLB'}
+    - type: Label
+      properties: {role: null, align: right, border: '', foreground: '#ccc', visible: true,
+        text: 'Selected Tool:', font_size: 18, font: '', spacing_above: small, icon_align: left,
+        spacing_below: small, italic: false, background: '', bold: false, underline: false,
+        icon: ''}
+      name: label_result_title
+      layout_properties: {grid_position: 'PZEJWT,YFBPFG'}
+    - type: Label
+      properties: {role: null, align: left, border: '', foreground: white, visible: true,
+        text: none yet, font_size: 18, font: '', spacing_above: small, icon_align: left,
+        spacing_below: small, italic: false, background: '', bold: false, underline: false,
+        icon: ''}
+      name: label_result
+      layout_properties: {grid_position: 'PZEJWT,GKSKZJ'}
+    - type: Spacer
+      properties: {height: 32}
+      name: spacer_3
+      layout_properties: {grid_position: 'PZEJWT,YKMRGI'}
+- type: FlowPanel
+  properties: {}
+  name: navbar_links
+  layout_properties: {slot: nav-right}
+- type: Label
+  properties: {role: null, align: left, border: '', foreground: '', visible: true,
+    text: Search Hints, font_size: null, font: '', spacing_above: small, icon_align: left,
+    spacing_below: small, italic: false, background: '', bold: false, underline: false,
+    icon: ''}
+  name: label_title
+  layout_properties: {slot: title}
+- type: Spacer
+  properties: {height: 32}
+  name: spacer_1
+  layout_properties: {slot: top-left-btn}

@@ -1,0 +1,15 @@
+correct_dependency_ids: {7U6PSZGRIFVZK2OC: 7U6PSZGRIFVZK2OC}
+dependencies:
+- version: {dev: false}
+  dep_id: 7U6PSZGRIFVZK2OC
+services:
+- source: /runtime/services/tables.yml
+  client_config: {}
+  server_config: {}
+package_name: SearchHintsExample
+name: Clone of Search Hints Example (2)
+runtime_options: {version: 1, server_version: python2-sandbox, client_version: '2',
+  server_spec: null}
+metadata: {}
+startup_form: SearchHintsDemo
+renamed: true
